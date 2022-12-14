@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Me</title>
+</head>
+<body>
+  <header>
+    <h1>Contact Me</h1>
+    <hr>
+  </header>
+  <nav>
+    <!--Navigation details goes here-->
+  </nav>
+  <main>
+    <b>My fictional Address.</b>
+    <br>
+    <p><strong>Postal Address:</strong> P.O. Box 764, Lae 411, Morobe Province, Papua New Guinea</p>
+    <br>
+    <p><strong>Send me and email.</strong></p>
+    
+    <form name="message" action="mailto:abrahamelijah2019@gmail.com" method="post" formentype="text/plain">
+      <fieldset>
+        <legend>Your personal details:</legend>
+        <input type="hidden" id="custId" name="custId" value="12345678">
+        <label for="name">Enter your Name: </label>
+        <input type="text" id="name" maxlength="30" placeholder="Your First and Last Name here" required>
+        <br>
+        <label for="title">Title: </label>
+        <label for="mr">Mr</label>
+        <input type="radio" name="title" id="mr">
+        <label for="mrs">Mrs</label>
+        <input type="radio" name="title" id="mrs">
+        <label for="ms">Ms</label>
+        <input type="radio" name="title" id="ms">
+        <label for="miss">Miss</label>
+        <input type="radio" name="title" id="miss">
+        <br>
+        <label for="gender">Choose your gender: </label>
+        <select name="gender" id="gender" required>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+        </select>
+        <br>
+        <label for="phone">Enter your mobile number:</label>
+        <input type="tel" id="phone" name="phone" placeholder="XXX-XX-XXX" maxlength="8" size="8">
+        <br>
+        <label for="email">Enter your Email: </label>
+        <input type="email" id="email" autocomplete="on" required>
+        <br>
+        <label for="message">Messages:</label>
+        <br>
+        <textarea name="message" id="messages" cols="100" rows="20" maxlength="500" size="500" placeholder="Type your messages here..."></textarea>
+        <br>
+        <label for="files">Upload files:</label>
+        <input type="file" id="file" multiple>
+        <input type="reset">
+        <input type="submit">
+      </fieldset>
+    </form>
+  </main>
+  <a href="index.html">Main</a>
+  <footer>
+    <!--Footer Details goes here-->
+  </footer>
+  
+</body>
+</html>
